@@ -1,0 +1,36 @@
+*{padding:0px;margin: 0px;}
+body{min-width: 1200px;}
+.section1{width: 70%;min-height:500px; margin:auto;}
+.section2{width: 100%;padding-top: 1px;background-color: rgb(255,255,255);color: black;}
+.section3{font-size: 1.6rem;text-align: center;width: 100%;height: 200px;border-top:2px solid rgb(6,110,183);display: flex;}
+.section4{text-align: center;width: 23%;margin-left: 1.5%;margin-top: 2%; height: 100%;  font-size: 0.6rem;padding: 0px;color: rgb(6,110,183);}
+.section4_1{margin: auto;font-size: 1.4rem;margin-left:1%;padding: 0px;}
+.section5{font-size: 0.8rem;text-align: center;color: black;}
+.section6{font-size: 2rem;margin: auto; overflow: hidden;white-space: nowrap;text-overflow: ellipsis; margin-left: 2%;}
+.section7{font-size: 0.8rem;width: 90%; color: rgb(40,40,40); overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.foot_num{width: 30%;height: 25px;margin: auto;}
+.foot_num1{height: 100%;width: 7%;border: 1px solid rgb(230,230,230);background-color: white;margin-left: 1%;}
+.num2{background-color: rgb(6,110,183);color: white;}
+.a3{width: 100%;margin: auto;font-size: 0.85rem;line-height:20px;text-indent:2em;}
+.foot1{width: 100%;display: flex;}
+.foot2{width: 50%;}
+
+.img1{width: 100%;height: 80%;}
+.a1{text-align: left;}
+.a2{text-align: right;}
+/*a:link {color: black} 
+a:visited {color: black}	
+a:hover {color: black}	
+a:active {color: yellow}	*/
+a{color: black;}
+a:link {color: black}; 
+a:visited {color: black};
+
+
+
+
+
+.Infooter{}
+.footer{ height:42px; line-height:42px; background-color: rgb(6,110,183);  width:100%;}
+.foot_nav a{ color:rgb(255,255,255); font-size:12px; margin:0 5px; line-height:42px;}
+.foot_con p{ color:rgb(255,255,255); font-size:10px; text-align:center;  position:absolute; top:0; right:0;}

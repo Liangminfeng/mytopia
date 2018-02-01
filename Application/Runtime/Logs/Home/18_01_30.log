@@ -1,0 +1,98 @@
+[ 2018-01-30T13:59:36+08:00 ] 192.168.2.158 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pk_jbsz` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `pk_jbsz` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pk_slider` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `pk_slider`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_slider` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_jbsz`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pk_jtyw` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `pk_jtyw`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pk_menu` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=0 ) ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=4 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=32 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: idd D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 83 行.
+NOTIC: [8] Undefined variable: idd D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 83 行.
+NOTIC: [8] Undefined variable: idd D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 83 行.
+NOTIC: [8] Undefined variable: idd D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 83 行.
+NOTIC: [8] Undefined variable: idd D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 83 行.
+NOTIC: [8] Undefined variable: idd D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 83 行.
+NOTIC: [8] Undefined variable: idd D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 83 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 132 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 132 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 132 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 132 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-30T17:05:29+08:00 ] 192.168.2.2 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pk_jbsz` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pk_jbsz` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pk_slider` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pk_slider`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk_slider` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_jbsz`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pk_jtyw` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pk_jtyw`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pk_menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=0 ) ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=3 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=5 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=32 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: idd D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 83 行.
+NOTIC: [8] Undefined variable: idd D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 83 行.
+NOTIC: [8] Undefined variable: idd D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 83 行.
+NOTIC: [8] Undefined variable: idd D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 83 行.
+NOTIC: [8] Undefined variable: idd D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 83 行.
+NOTIC: [8] Undefined variable: idd D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 83 行.
+NOTIC: [8] Undefined variable: idd D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 83 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 132 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 132 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 132 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 132 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

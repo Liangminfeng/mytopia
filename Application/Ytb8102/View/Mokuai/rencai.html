@@ -1,0 +1,30 @@
+<include file="Public:public" />
+<block name="demo">
+<div class="row">
+		<div class="col-xs-10">
+			<table id="sample-table-1" class="table table-striped table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>菜单名</th>
+						<th class="hidden-480">路由</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<volist name="list" id="row">
+						<tr>
+							<td>{$row['name']}</td>
+							<td>{$row['url']}</td>
+							<td>
+								<button class="btn btn-xs btn-info" title="修改" onclick="window.location.href='__MODULE__/Mokuai/rencxiu?id={$row['id']}'">
+									<i class="ace-icon fa fa-pencil bigger-120"></i>
+								</button>
+							</td>
+						</tr>
+					</volist>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</block>

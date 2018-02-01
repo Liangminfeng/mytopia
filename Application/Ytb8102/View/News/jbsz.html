@@ -1,0 +1,93 @@
+<include file="Public:public" />
+<block name="demo">
+<!-- <button class="btn btn-info" onclick="window.location.href='__URL__/add_jtyw'" style="margin-left:0.6%">添加</button> -->
+
+
+
+		<div  class="col-xs-10">
+		<!-- PAGE CONTENT BEGINS -->
+		<form  action="__URL__/jbszxg" method="post" class="form-horizontal" role="form"  enctype="multipart/form-data">
+			<!-- #section:elements.form -->
+			<div class="form-group">
+				<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 标题：</label>
+
+				<div class="col-sm-9">
+					<input type="text" id="form-field-1"  name="title" value="{$res['title']}"  class="col-xs-10 col-sm-5">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 关键字：</label>
+
+				<div class="col-sm-9">
+					<input type="text" id="form-field-1" name="gjz"  value="{$res['gjz']}"   class="col-xs-10 col-sm-5">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 描述：</label>
+
+				<div class="col-sm-9">
+					<textarea name="ms" value="" id="" cols="30" rows="10" style="width: 280px">{$res['miaoshu']}</textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> ICP：</label>
+
+				<div class="col-sm-9"> 
+					<input type="text" id="form-field-1" name="icp"  value="{$res['icp']}"   class="col-xs-10 col-sm-5">
+				</div>
+			</div>
+				<div class="form-group">
+				<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 京公网安备：</label>
+
+				<div class="col-sm-9"> 
+					<input type="text" id="form-field-1" name="jgwab"  value="{$res['jgwab']}"   class="col-xs-10 col-sm-5">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 是否关闭网站：</label>
+
+				<div class="col-sm-9">
+				<if condition="$res['code'] eq 1">
+					    <input id="form-field-1" type="radio" checked="checked"  name="code" id="radio" value="1" />是
+					     <input id="form-field-1" type="radio"  name="code" id="radio" value="2" /> 否
+					    <elseif condition="$res['code'] eq 2"/>
+   					   
+   					      <input id="form-field-1" type="radio"   name="code" id="radio" value="1" />是
+					     <input id="form-field-1" type="radio" checked="checked"  name="code" id="radio" value="2" /> 否
+   					    </if>
+				</div>
+					<div class="col-sm-9">
+
+					<textarea name="gbms"  value="" id="" cols="30" rows="10" style="height: 150px">{$res['gbwz']}</textarea>
+				</div>
+			</div>
+
+			
+
+			
+				<div class="col-md-offset-3 col-md-9">
+					<input type="submit"  class="btn btn-info" value="修改"><br><br>
+		
+		</form>
+
+
+	</div><!-- /.span -->
+
+
+	<script type="text/javascript">
+	
+
+		function state(id,code){
+			if(confirm('确定更新该文章状态？')){
+				$.post('__URL__/jtyw_state',{id:id,code:code},function(data){
+					if(data == 1){
+						alert('更新成功！');
+						window.location.reload();
+					}else{
+						alert('更新失败！');
+					}
+				})
+			}
+		}
+	</script>
+</block>

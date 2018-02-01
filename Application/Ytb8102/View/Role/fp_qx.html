@@ -1,0 +1,46 @@
+<include file="Public:public" />
+<block name="demo">
+<body class="childrenBody">
+    <blockquote class="layui-elem-quote news_search">
+        <div class="layui-inline">
+            <a href="javascript:void" class="layui-btn layui-btn-normal usersAdd_btn">分配给{$res["name"]}权限</a>
+        </div>
+    </blockquote>
+        <form action="__URL__/fp" method="post"  enctype="multipart/form-data">
+        <div style=" margin-left: 200px" class="container">
+        <volist name="parent" id="pa">
+        <div  class="checkbox col-md-8">
+        &nbsp;&nbsp;&nbsp;
+        <input  type="checkbox" id="check" value="{$a=$pa['id']}"   <in name="a" value="$qxid">checked=checked</in> name="right_id[]">
+        {$pa['name']}
+    </div>
+    <br>
+    <hr>
+    <div  style="border: 1px dashed rgb(200,200,200);line-height: 30px;">
+        <volist name="pa[parent]" id="vos">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input  type="checkbox" value="{$b=$vos['id']}"             <in name="b" value="$qxid">checked=checked</in> name="right_id[]">
+        {$vos["name"]}
+        </volist>
+    </div>
+    </volist>    <input style=" margin-right: 500px"   class="btn btn-info" type="submit"  value="确认分配">
+    </div><br>
+  
+       
+      
+        <!--role_id 角色id -->
+        <input type="hidden" name="role_id" value="{$res['id']}">
+    </form>
+   
+</body>
+<script>
+    $(function(){
+        $("#check ").click(function(){
+        var n=$(this).prop("checked");
+        $(this).parent().next().next().next().find("input").prop("checked",n);         
+        });
+    });
+</script>
+	
+
+</block>

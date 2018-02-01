@@ -1,0 +1,69 @@
+<include file="Public:public" />
+<block name="demo">
+	<div class="page-content-area">
+		<div class="row">
+			<div class="col-xs-10">
+				<!-- PAGE CONTENT BEGINS -->
+				<div>
+					<form action="__URL__/save_xcp" class="dropzone dz-clickable" method="post" id="dropzone" enctype="multipart/form-data">
+						<input type="hidden" name="id" value="{$data['id']}">
+						<div class="dz-default dz-message">
+							<span>
+								<span class="bigger-150 bolder"><i class="ace-icon fa fa-caret-right red"></i>点击这里上传视频</span><br> 				
+								<i onclick="file()" style="margin-top:50px;" class="upload-icon ace-icon fa fa-cloud-upload blue fa-3x"></i><br><span id="path"></span>
+								<input type="file" style="display: none;" id="file" name="file">
+							</span>
+						</div>
+						<center><button style="margin-top:50px;" class="btn btn-info" onclick="tijiao()" type="button">
+							<i class="ace-icon fa fa-check bigger-110"></i>
+							立即提交
+						</button></center>
+					</form>
+				</div><!-- PAGE CONTENT ENDS -->
+				
+					<center><video width="552" height="464" controls autobuffer poster="__PUBLIC__/video.png">
+					    <source src="__PUBLIC__/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
+					</video></center>
+			</div><!-- /.col -->
+		</div><!-- /.row -->
+	</div>
+	<script type="text/javascript" charset="utf-8" src="__PUBLIC__/Admin/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/Admin/ueditor/ueditor.all.min.js"></script>
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/Admin/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+
+        function tijiao(){
+        	var title = $("input[name='title']").val();
+        	var content = UE.getEditor('container').getContent();
+        	if(!title){
+        		alert('请输入文章标题！');
+        	}else if(!content){
+        		alert('请输入文章内容！');
+        	}else{
+        		$.post('__URL__/insert_jtyw',{title:title,content:content},function(data){
+        			if(data == 1){
+        				alert('添加成功！');
+        				window.location.href='__URL__/jtyw';
+        			}else{
+        				alert('添加失败！');
+        			}
+        		})
+        	}
+        }
+
+        function file(){
+        	$("#file").click();
+        }
+        $("#file").change(function(){
+        	var file = $(this).val();
+        	$("#path").html(file);
+        })
+
+        function tijiao(){
+        	$("#dropzone").submit();
+        }
+    </script>
+</block>

@@ -1,0 +1,85 @@
+[ 2018-01-22T10:45:41+08:00 ] 192.168.2.10 /index.php?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pk_jbsz` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pk_jbsz` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pk_slider` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pk_slider`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk_slider` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_jbsz`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pk_jtyw` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pk_jtyw`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pk_menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=0 ) ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=3 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=5 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=32 )  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\wamp\www\pk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-22T10:45:47+08:00 ] 192.168.2.10 /index.php/home/New/news.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pk_jbsz` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pk_jbsz` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pk_jtyw` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pk_jtyw` WHERE ( code = 1 and stat=1 ) ORDER BY edittime desc LIMIT 1,5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pk_hydt` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pk_hydt` WHERE ( code = 1 ) ORDER BY edittime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pk_xcp` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pk_xcp` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk_jtyw` WHERE ( code = 1 ) LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk_jbsz`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_jtyw`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pk_zhongxin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pk_zhongxin` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk_zhongxin` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pk_menu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=0 ) ORDER BY id asc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=3 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pk_menu` WHERE ( stat=32 )  [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

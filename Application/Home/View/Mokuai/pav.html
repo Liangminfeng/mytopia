@@ -1,0 +1,57 @@
+
+<style>
+	.a22 a{font-size:16px;color:black;}
+	.a22 a:link{color:black;}
+   .a22:hover{color: #EE782B;border-top:2px solid #EE782B; background-color:rgb(255,255,255);}
+   .na:hover{color: #EE782B;}
+    .header_menu{text-align: center;float: left;margin: 0 8px;width: 90px;height: 22px;}
+	.header_menu .a22{padding: 44px 0 43px 0;}
+	div.lai{line-height:2.6;position:relative;top:11px;background-color:#fff;font-size:15px;}
+	div.lai a{font-size: 16px;}
+	.header .con a{color:black;}
+</style>
+ 	<?php
+		$ss=M('menu')->where("stat=0")->order('id asc')->select();
+		foreach ($ss as $key => $value) {
+			$ss[$key]['son'] = M('menu')->where("stat=$value[id]")->select();
+		}
+		foreach($ss as $a3=>$a6){
+			if($idd==$a6['id']){
+					echo '<div class="header_menu">';
+					echo '<div class="dss a22" style="height: 100%;width: 100%;">';
+					echo '<a href="'.$a6['url'].'?id='.$a6['id'].'" id="an" class="a10">'.$a6["title"].'&nbsp;&nbsp;</a>';
+					foreach($a6['son'] as $a1=>$a2){
+						if($a6['id']==$a2['stat']){
+							echo '<div class="lai"><a   href="'.$a2['url'].'?id='.$a2['id'].'" class="na">'.$a2["title"].'</a>
+    </div>';
+						}
+					}	
+					echo '</div>';
+					echo '</div>';
+					
+			}else{
+					echo '<div class="header_menu">';
+					echo '<div  class="dss a22" style="height: 100%;width: 100%;">';
+					echo '<a href="'.$a6['url'].'?id='.$a6['id'].'" class="a10">'.$a6["title"].'</a>';
+					foreach($a6['son'] as $a1=>$a2){
+						if($a6['id']==$a2['stat']){
+							echo '<div  class="lai"><a href="'.$a2['url'].'?id='.$a2['id'].'">'.$a2["title"].'</a></div>';
+						}
+					}
+					echo '</div>';
+					echo '</div>';
+					
+				}
+		}
+    ?>
+    <script type="text/javascript">
+    $(function(){
+    	$(".lai").hide();
+    	$(".a10").mouseover(function(){
+    		$(this).siblings().show();
+    	});
+    	$(".dss").mouseleave(function(){
+    		$(".a10").siblings().hide();
+    	});
+    });
+    </script>

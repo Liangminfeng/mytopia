@@ -1,0 +1,24 @@
+[ 2018-01-30T13:59:37+08:00 ] 192.168.2.158 /sgweb/r/cms/www/sgweb/img/logo.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Sgweb
+
+[ 2018-01-30T17:05:29+08:00 ] 192.168.2.2 /sgweb/flow_statistic.jspx?page=http%3A%2F%2Fdev.yuntopon.com%2F&referer=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Sgweb
+
+[ 2018-01-30T17:05:30+08:00 ] 192.168.2.2 /sgweb/r/cms/www/sgweb/img/logo.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Sgweb
+
+[ 2018-01-30T17:05:41+08:00 ] 192.168.2.2 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Favicon
+
